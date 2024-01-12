@@ -1,0 +1,92 @@
+[
+    {
+      "id": 1,
+      "title": "Guardians of the Galaxy Vol. 3",
+      "image": "https://th.bing.com/th/id/OIP.QcCtGcp6BDnkffryBkJH2wHaK9?pid=ImgDet&rs=1",
+      "year": 2023,
+      "rating": 0,
+      "description": "Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and one of their own - a mission that could mean the end of the Guardians if not successful.",
+      "genre": "ACTION"
+    },
+    {
+      "id": 2,
+      "title": "Air",
+      "image": "https://th.bing.com/th/id/R.d87440f3e3282ba861b952a953e09b8b?rik=WAk%2bma8ITKwRfw&pid=ImgRaw&r=0",
+      "year": 2023,
+      "rating": 0,
+      "description": "Follows the history of shoe salesman Sonny Vaccaro, and how he led Nike in its pursuit of the greatest athlete in the history of basketball, Michael Jordan.",
+      "genre": "DRAMA"
+    },
+    {
+      "id": 3,
+      "title": "Dungeons & Dragons: Honor Among Thieves",
+      "image": "https://tinyurl.com/2y92xkzb",
+      "year": 2023,
+      "rating": 0,
+      "description": "A charming thief and a band of unlikely adventurers embark on an epic quest to retrieve a lost relic, but things go dangerously awry when they run afoul of the wrong people.",
+      "genre": "ADVENTURE"
+    },
+    {
+      "id": 4,
+      "title": "The Super Mario Bros. Movie",
+      "image": "https://tinyurl.com/285434et",
+      "year": 2023,
+      "rating": 0,
+      "description": "The story of The Super Mario Bros. on their journey through the Mushroom Kingdom.",
+      "genre": "COMEDY"
+    },
+    {
+      "id": 5,
+      "title": "John Wick: Chapter 4",
+      "image": "https://th.bing.com/th/id/R.7fe235f990f5d464bf2c6be4faf8f430?rik=yHy1Gj2UXgAedw&pid=ImgRaw&r=0",
+      "year": 2023,
+      "rating": 0,
+      "description": "John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
+      "genre": "ACTION"
+    },
+    {
+      "id": 6,
+      "title": "The Kerala Story",
+      "image": "https://i.pinimg.com/736x/75/69/bb/7569bbdfc513ea3c6769b9a702fb8cf6.jpg",
+      "year": 2023,
+      "rating": 0,
+      "description": "A converted Muslim woman Fatima Ba narrates her ordeal of how she once wanted to become a nurse but was abducted from her home and manipulated by religious vanguards, turned into an ISIS terrorist and landed in Afghanistan jail.",
+      "genre": "DRAMA"
+    },
+    {
+      "id": 7,
+      "title": "Guy Ritchie's the Covenant",
+      "image": "https://th.bing.com/th/id/R.e4b74f603be54e33e19b2363f5a89560?rik=SbA2TfgK10SVIA&pid=ImgRaw&r=0",
+      "year": 2023,
+      "rating": 0,
+      "description": "During the war in Afghanistan, a local interpreter risks his own life to carry an injured sergeant across miles of grueling terrain.",
+      "genre": "ACTION"
+    },
+    {
+      "id": 8,
+      "title": "Sisu",
+      "image": "https://th.bing.com/th/id/OIP.UDTiK9gX6_XRlh2eavZt3wHaLH?pid=ImgDet&rs=1",
+      "year": 2023,
+      "rating": 0,
+      "description": "When an ex-soldier who discovers gold in the Lapland wilderness tries to take the loot into the city, Nazi soldiers led by a brutal SS officer battle him.",
+      "genre": "ACTION"
+    },
+    {
+      "id": 9,
+      "title": "Queen Charlotte: A Bridgerton Story",
+      "image": "https://i.pinimg.com/originals/cd/19/ea/cd19ea849598405906bb800c11ecabf7.jpg",
+      "year": 2022,
+      "rating": 0,
+      "description": "Betrothed against her will to King George, young Charlotte arrives in London on her wedding day and faces scrutiny from the monarch's cunning mother.",
+      "genre": "DRAMA"
+    },
+    {
+      "id": 10,
+      "title": "Beef",
+      "image": "https://upload.wikimedia.org/wikipedia/en/f/fe/Beef_(TV_series)_poster.jpg",
+      "year": 2023,
+      "rating": 0,
+      "description": "Two people let a road rage incident burrow into their minds and slowly consume their every thought and action.",
+      "genre": "DRAMA"
+    }
+  ]

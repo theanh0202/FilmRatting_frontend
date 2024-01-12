@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "username": "Walton.Leuschke",
+      "role": "ADMIN",
+      "password": "Wmv6H7PR8vrLRcJ",
+      "fullName": "Nicholas Turner",
+      "email": "Janis13@gmail.com",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/719.jpg",
+      "dateOfBirth": "1997-05-06T00:00:00.000+00:00"
+    },
+    {
+      "id": 2,
+      "username": "Tony_Tromp28",
+      "role": "USER",
+      "password": "S5IHkuMWHsHzg6d",
+      "fullName": "Inez Ritchie",
+      "email": "Emma_Hahn@yahoo.com",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1120.jpg",
+      "dateOfBirth": "1992-03-03T00:00:00.000+00:00"
+    },
+    {
+      "id": 3,
+      "username": "Antonetta21",
+      "role": "USER",
+      "password": "AzTtCg_Westp6HQ",
+      "fullName": "Judith Reilly",
+      "email": "Bartholome87@gmail.com",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/411.jpg",
+      "dateOfBirth": "1997-05-30T00:00:00.000+00:00"
+    },
+    {
+      "id": 4,
+      "username": "Jasmin_Deckow",
+      "role": "USER",
+      "password": "IrtlpfvRw8Ufow4",
+      "fullName": "Lloyd Haley",
+      "email": "Mabelle_Gutkowski@gmail.com",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/741.jpg",
+      "dateOfBirth": "1999-04-14T00:00:00.000+00:00"
+    },
+    {
+      "id": 5,
+      "username": "Rhiannon.Glover61",
+      "role": "USER",
+      "password": "GDpVlxEs2coIhml",
+      "fullName": "Sergio Schuppe",
+      "email": "Napoleon_Baumbach67@hotmail.com",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/85.jpg",
+      "dateOfBirth": "1997-08-23T00:00:00.000+00:00"
+    }
+  ]

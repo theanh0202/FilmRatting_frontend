@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FilmRating | Homepage</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div class="overlay" data-overlay></div>
+
+        <a href="./index.html" class="logo">
+          <img src="./favicon.svg" alt="Filmrating logo" />
+        </a>
+
+        <div class="header-actions">
+          <div class="search-box">
+            <button
+              class="btn-search"
+              id="search_btn"
+              onclick="filmTittleSearch()"
+            >
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+            <input
+              type="text"
+              class="input-search"
+              placeholder="Type to Search..."
+              id="film_title_search"
+            />
+          </div>
+          <div id="user-login">
+          </div>
+        </div>
+
+        <button class="menu-open-btn" data-menu-open-btn>
+          <ion-icon name="reorder-two"></ion-icon>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="./index.html" class="logo">
+              <img src="./assets/images/logo.svg" alt="Filmrating logo" />
+            </a>
+
+            <button class="menu-close-btn" data-menu-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="./index.html" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Film List</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-social-list">
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="body-filmrating">
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle">FilmRating</p>
+
+              <h1 class="h1 hero-title">
+                Where To <strong>Rate & Review</strong> Films.
+              </h1>
+
+              <div class="meta-wrapper">
+                <div class="ganre-wrapper">
+                  <a href="#">Romance,</a>
+
+                  <a href="#">Drama</a>
+                </div>
+
+                <div class="date-time">
+                  <div>
+                    <ion-icon name="calendar-outline"></ion-icon>
+
+                    <time datetime="2022">2022</time>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-primary">
+                <ion-icon name="star-outline"></ion-icon>
+                <span>Rate now</span>
+              </button>
+            </div>
+          </div  >
+        </section>
+
+        <!-- 
+        - #UPCOMING
+      -->
+
+        <section class="upcoming"  id="filmList">
+          <div class="container">
+            <div class="flex-wrapper">
+              <div class="title-wrapper">
+                <p class="section-subtitle">Ratings & Reviews</p>
+
+                <h2 class="h2 section-title">Film List</h2>
+              </div>
+
+              <ul class="filter-list">
+                <li>
+                  <div class="dropdown">
+                    <button class="filter-btn">Genre</button>
+                    <div class="dropdown-content">
+                      <a href="index.html#filmList" onclick="genreFilter(null)"
+                        >All</a
+                      >
+                      <a href="index.html#filmList" onclick="genreFilter('ACTION')"
+                        >Action</a
+                      >
+                      <a
+                        href="index.html#filmList"
+                        onclick="genreFilter('ADVENTURE')"
+                        >Adventure</a
+                      >
+                      <a href="index.html#filmList" onclick="genreFilter('COMEDY')"
+                        >Comedy</a
+                      >
+                      <a href="index.html#filmList" onclick="genreFilter('DRAMA')"
+                        >Drama</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button class="filter-btn">Title</button>
+                    <div class="dropdown-content">
+                      <a href="index.html#filmList" onclick="sortByTitle('ASC')"
+                        >A to Z</a
+                      >
+                      <a href="index.html#filmList" onclick="sortByTitle('DESC')"
+                        >Z to A</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button class="filter-btn">Rating</button>
+                    <div class="dropdown-content">
+                      <a href="index.html#filmList" onclick="sortByRating('ASC')"
+                        >Lowest to Highest</a
+                      >
+                      <a href="index.html#filmList" onclick="sortByRating('DESC')"
+                        >Highest to Lowest</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button class="filter-btn">Year</button>
+                    <div class="dropdown-content">
+                      <a href="index.html#filmList" onclick="sortByYear('DESC')"
+                        >Newest to Oldest</a
+                      >
+                      <a href="index.html#filmList" onclick="sortByYear('ASC')"
+                        >Oldest to Newest</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div id="button-add"></div>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="movies-list" id="film"></ul>
+          </div>
+          <div>
+            <ul class="pagination home-product__pagination" id="pagination">
+              <li class="pagination-item">
+                <a href="#" class="pagination-item__link" onclick="prePage()">
+                  <i class="pagination-item__icon fas fa-angle-left"></i>
+                </a>
+              </li>
+
+              <li class="pagination-item pagination-item--active">
+                <a href="" class="pagination-item__link">1</a>
+              </li>
+              <li class="pagination-item">
+                <a href="" class="pagination-item__link">2</a>
+              </li>
+              <li class="pagination-item">
+                <a href="" class="pagination-item__link">3</a>
+              </li>
+              <li class="pagination-item">
+                <a href="" class="pagination-item__link">4</a>
+              </li>
+              <li class="pagination-item">
+                <a href="" class="pagination-item__link">5</a>
+              </li>
+              <li class="pagination-item">
+                <a href="" class="pagination-item__link">...</a>
+              </li>
+              <li class="pagination-item">
+                <a href="" class="pagination-item__link">14</a>
+              </li>
+
+              <li class="pagination-item">
+                <a href="#" class="pagination-item__link" onclick="nextPage()">
+                  <i class="pagination-item__icon fas fa-angle-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CTA
+      -->
+
+        <section class="cta">
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="cta-title">Trial start first 30 days.</h2>
+
+              <p class="cta-text">
+                Enter your email to create or restart your membership.
+              </p>
+            </div>
+
+            <form action="" class="cta-form">
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Enter your email"
+                class="email-field"
+              />
+
+              <button type="submit" class="cta-form-btn">Get started</button>
+            </form>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand-wrapper">
+            <a href="./index.html" class="logo">
+              <img src="./assets/images/logo.svg" alt="FilmRate logo" />
+            </a>
+
+            <ul class="footer-list">
+              <li>
+                <a href="./index.html" class="footer-link">Home</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Movie</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">TV Show</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Web Series</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Pricing</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="quicklink-wrapper">
+            <ul class="quicklink-list">
+              <li>
+                <a href="#" class="quicklink-link">Faq</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink-link">Help center</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink-link">Terms of use</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink-link">Privacy</a>
+              </li>
+            </ul>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="align-content: center">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+          </p>
+
+          <img
+            src="./assets/images/footer-bottom-img.png"
+            alt="Online banking companies logo"
+            class="footer-bottom-img"
+          />
+        </div>
+      </div>
+    </footer>
+      <!--
+        - #MODAL
+      -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="hideModal()">&times;</span>
+    <h2>UPDATE FILM</h2>
+    <input type="hidden" id="id" name="id">
+    <label>Title</label>
+    <input type="text" placeholder="Enter film title..." id="title">
+    <label>Genre</label>
+    <select style="background-color: white;" id="genre">
+      <option>ACTION</option>
+      <option>ADVENTURE</option>
+      <option>COMEDY</option>
+      <option>DRAMA</option>
+    </select>
+    <label>Image</label>
+    <input type="text" placeholder="Enter image link..." id="image">
+    <label>Year</label>
+    <input type="number" placeholder="Enter year..." id="year">
+    <label>Description</label>
+    <input type="text" placeholder="Enter film Description..." id="description">
+    <br>
+    <div style="display: inline-block;">
+      <button class="btn btn-primary" style="display: inline-block;" onclick="saveFilm()">Submit</button>
+      <button  class="btn btn-primary" style="display: inline-block;" onclick="hideModal()">Cancel</button>
+    </div>
+    
+  </div>
+
+
+</div>
+  <!-- Modal Confirm Delete -->
+
+  <div id="modalConfirmDelete" class="modal">
+    <span class="close" onclick="document.getElementById('modalConfirmDelete').style.display='none'">&times;</span>
+    <form class="modal-content">
+      <div class="container">
+        <input type="hidden" id="filmIdDelete" name="id">
+        <h1>Delete Film</h1>
+        <p>Are you sure you want to delete film?</p>
+      
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('modalConfirmDelete').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="button" onclick="deleteFilm()" class="deletebtn">Delete</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Modal Login Alert -->
+  <div id="loginAlert" class="modal" >
+    <!-- Modal content -->
+    <div class="modal-content" style="text-align: center;">
+      <span class="close" onclick="document.getElementById('loginAlert').style.display='none';">&times;</span>
+      <h2 >LOGIN ALERT</h2>
+      <p>You have to login or signup to write your review</p>
+      <div style="display: inline-block;">
+        <button class="btn btn-primary" style="display: inline-block;" onclick="navToLogin()">Login</a></button>
+        <button  class="btn btn-primary" style="display: inline-block;" onclick="document.getElementById('loginAlert').style.display='none';">Cancel</button>
+      </div>
+      
+    </div>
+  
+  
+  </div>
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/film.js"></script>
+    <script src="./assets/js/review.js"></script>
+
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

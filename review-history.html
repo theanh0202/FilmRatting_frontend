@@ -1,0 +1,133 @@
+<section class="movie-detail" id="review-history">
+<div class="container">
+    <figure class="movie-detail-banner">
+        <img
+          src="https://th.bing.com/th/id/OIP.Q2cxzDNrJRbD6aXYQeSRkwAAAA?pid=ImgDet&rs=1"
+          alt="Free guy movie poster"
+        />
+    
+        <button class="play-btn">
+          <ion-icon name="play-circle-outline"></ion-icon>
+        </button>
+      </figure>
+    
+      <div class="movie-detail-content">
+        <p class="detail-subtitle">New Episodes</p>
+    
+        <h1 class="h1 detail-title">Film Title</h1>
+    
+        <div class="meta-wrapper">
+          <div class="badge-wrapper">
+            <div class="badge badge-fill">PG 13</div>
+    
+            <div class="badge badge-outline">HD</div>
+          </div>
+    
+          <div class="ganre-wrapper">
+            <a href="#">Film Genre</a>
+          </div>
+    
+          <div class="date-time">
+            <div>
+              <ion-icon name="calendar-outline"></ion-icon>
+    
+              <time datetime="2021">Film Year</time>
+            </div>
+    
+            <div>
+              <ion-icon name="time-outline"></ion-icon>
+    
+              <time datetime="PT115M">Rating</time>
+            </div>
+          </div>
+        </div>
+    
+        <p class="storyline">
+        Review
+        </p>
+    
+        <div class="details-actions">
+    
+          <div class="title-wrapper">
+            <p class="title">Your Rating</p>
+            <strong class="reviews">10</strong>
+          </div>
+    
+          
+        </div>
+    
+      </div>
+      <button class="btn btn-primary">Delete</button>
+      <button class="btn btn-primary">Update</button>
+</div>
+</section>
+<!-- Modal Confirm Delete -->
+
+<div id="modalDeleteReview" class="modal">
+    <span class="close" onclick="document.getElementById('modalDeleteReview').style.display='none'">&times;</span>
+    <form class="modal-content">
+      <div class="container">
+        <input type="hidden" id="reviewIdDelete" name="id">
+        <h1>Delete Review</h1>
+        <p>Are you sure you want to delete review?</p>
+      
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('modalDeleteReview').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="button" onclick="deleteReview()" class="deletebtn">Delete</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div id="modalEditReview" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="document.getElementById('modalEditReview').style.display='none';">&times;</span>
+      <input type="hidden" id="reviewIdUpdate" name="id">
+      <div class="testimonial-heading">
+        <span>Reviews</span>
+        <h1>Write Your Review Here</h1>
+      </div>
+      <!--testimonials-box-container------>
+      <div class="testimonial-box-container" >
+      <div class="testimonial-box">
+        <div class="container">
+        
+            <div class="row">
+              <div class="col-25">
+                <label for="rating">Rating</label>
+              </div>
+              <div class="col-75">
+                <input
+                  type="number"
+                  id="rating-update"
+                  name="rating"
+                  placeholder="Enter your rating..."
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="review">Review</label>
+              </div>
+              <div class="col-75">
+                <textarea
+                  id="subject-update"
+                  name="subject"
+                  placeholder="Write something.."
+                  style="height: 200px"
+                ></textarea>
+              </div>
+            </div>
+            <br />
+            <div class="row" onclick="updateReview()">
+              <input type="submit" value="Submit"/>
+            </div>
+    
+        </div>
+      </div>
+      </div>
+    </div>
+  
+  
+  </div>

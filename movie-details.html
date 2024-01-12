@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Guy 2021</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body id="#top">
+<!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <div class="overlay" data-overlay></div>
+
+      <a href="./index.html" class="logo">
+        <img src="./favicon.svg" alt="Filmrating logo" />
+      </a>
+
+      <div class="header-actions">
+        <div class="search-box">
+          <button
+            class="btn-search"
+            id="search_btn"
+            onclick="filmTittleSearch()"
+          >
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+          <input
+            type="text"
+            class="input-search"
+            placeholder="Type to Search..."
+            id="film_title_search"
+          />
+        </div>
+        <div id="user-login">
+          <!-- <a href="./login.html">
+          <button class="btn btn-primary">Sign in</button>
+        </a>
+
+        <li class="header__navbar-item header__navbar-user">
+          <img src="./assets/img/user_avatar.png" alt="" class="header__navbar-user-img" />
+          <span class="header__navbar-user-name">
+            Tín Phạm
+          </span>
+          <ul class="header__navbar-user-menu">
+            <li class="header__navbar-user-item">
+              <a href="">Tài khoản của tôi</a>
+            </li>
+            <li class="header__navbar-user-item">
+              <a href="">Địa chỉ của tôi</a>
+            </li>
+            <li class="header__navbar-user-item">
+              <a href="">Đơn mua</a>
+            </li>
+            <li class="header__navbar-user-item header__navbar-user-item--separate">
+              <a href="/login.html">Đăng xuất</a>
+            </li>
+          </ul>
+        </li> -->
+        </div>
+      </div>
+
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="reorder-two"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo.svg" alt="Filmrating logo" />
+          </a>
+
+          <button class="menu-close-btn" data-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Film List</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Contact Us</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-social-list">
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+    <main>
+      <div class="row">
+        <div class="col-25">
+          <h2>Film Title</h2>
+          <img src="https://th.bing.com/th/id/OIP.Q2cxzDNrJRbD6aXYQeSRkwAAAA?pid=ImgDet&rs=1">
+        </div>
+        <div class="col-25">
+          <h2>Film Title</h2>
+          <img src="https://th.bing.com/th/id/OIP.Q2cxzDNrJRbD6aXYQeSRkwAAAA?pid=ImgDet&rs=1">
+        </div>
+        <div class="col-25">
+          <h2>Film Title</h2>
+          <img src="https://th.bing.com/th/id/OIP.Q2cxzDNrJRbD6aXYQeSRkwAAAA?pid=ImgDet&rs=1">
+        </div>
+        <div class="col-25">
+          <h2>Film Title</h2>
+          <img src="https://th.bing.com/th/id/OIP.Q2cxzDNrJRbD6aXYQeSRkwAAAA?pid=ImgDet&rs=1">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <h2>Film Title</h2>
+          <img src="https://th.bing.com/th/id/OIP.Q2cxzDNrJRbD6aXYQeSRkwAAAA?pid=ImgDet&rs=1">
+        </div>
+        <div class="col-25">
+          <h2>Film Title</h2>
+          <img src="https://th.bing.com/th/id/OIP.Q2cxzDNrJRbD6aXYQeSRkwAAAA?pid=ImgDet&rs=1">
+        </div>
+        <div class="col-25">
+          <h2>Film Title</h2>
+          <img src="https://th.bing.com/th/id/OIP.Q2cxzDNrJRbD6aXYQeSRkwAAAA?pid=ImgDet&rs=1">
+        </div>
+        <div class="col-25">
+          <h2>Film Title</h2>
+          <img src="https://th.bing.com/th/id/OIP.Q2cxzDNrJRbD6aXYQeSRkwAAAA?pid=ImgDet&rs=1">
+        </div>
+      </div>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand-wrapper">
+            <a href="./index.html" class="logo">
+              <img src="./assets/images/logo.svg" alt="Filmlane logo" />
+            </a>
+
+            <ul class="footer-list">
+              <li>
+                <a href="./index.html" class="footer-link">Home</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Movie</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">TV Show</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Web Series</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Pricing</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="quicklink-wrapper">
+            <ul class="quicklink-list">
+              <li>
+                <a href="#" class="quicklink-link">Faq</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink-link">Help center</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink-link">Terms of use</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink-link">Privacy</a>
+              </li>
+            </ul>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+          </p>
+
+          <img
+            src="./assets/images/footer-bottom-img.png"
+            alt="Online banking companies logo"
+            class="footer-bottom-img"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/scripts.js"></script>
+  <script src="./assets/js/header.js"></script>
+  <script src="./assets/js/film.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
